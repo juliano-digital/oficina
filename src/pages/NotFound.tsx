@@ -1,0 +1,2 @@
+import { Button } from '../components/ui/Button'
+export function NotFound() { return <main className="flex min-h-screen items-center justify-center bg-ink px-5 text-center"><div><p className="font-display text-8xl text-signal">404</p><h1 className="mt-4 font-display text-4xl uppercase text-white">Página não encontrada</h1><p className="mt-3 text-mist">O endereço que você acessou não existe.</p><Button href="/" className="mt-8">Voltar ao início</Button></div></main> }

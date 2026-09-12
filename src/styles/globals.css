@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; font-family: 'Inter', sans-serif; background: #0a0a0a; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #0a0a0a; }
+* { box-sizing: border-box; }
+::selection { background: #e11d2e; color: white; }
+.form-input { @apply mt-2 block w-full border border-line bg-white/[.04] px-4 py-3 text-sm font-normal normal-case tracking-normal text-white outline-none transition-colors placeholder:text-white/30 focus:border-signal focus:ring-1 focus:ring-signal; }
+.field-error { @apply mt-1 block text-[11px] font-normal normal-case tracking-normal text-red-300; }
+.marquee-track { animation: marquee 18s linear infinite; will-change: transform; }
+.marquee-track:hover, .marquee-track:focus-visible { animation-play-state: paused; outline: none; }
+@keyframes marquee { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+.prose h2 { color: white; font-family: Anton, sans-serif; text-transform: uppercase; font-size: 1.8rem; margin-top: 2rem; }
+.prose p { line-height: 1.8; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

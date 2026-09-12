@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Fachada do Centro Automotivo</title>
+  <desc id="desc">Fachada frontal de uma oficina automotiva com placa Centro Automotivo</desc>
+  <rect width="800" height="800" fill="#101010"/>
+  <rect y="565" width="800" height="235" fill="#202020"/>
+  <rect x="54" y="126" width="692" height="470" rx="8" fill="#d7d7d2"/>
+  <rect x="54" y="126" width="692" height="150" fill="#e91b2d"/>
+  <rect x="82" y="154" width="636" height="94" rx="4" fill="#151515"/>
+  <text x="400" y="215" fill="#fff" font-family="Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="3" text-anchor="middle">CENTRO AUTOMOTIVO</text>
+  <rect x="84" y="304" width="250" height="246" fill="#161616"/>
+  <rect x="101" y="321" width="216" height="210" fill="#26383e"/>
+  <path d="M101 400h216M209 321v210" stroke="#8eb0b3" stroke-width="7" opacity=".72"/>
+  <rect x="466" y="304" width="250" height="246" fill="#161616"/>
+  <rect x="483" y="321" width="216" height="210" fill="#26383e"/>
+  <path d="M483 400h216M591 321v210" stroke="#8eb0b3" stroke-width="7" opacity=".72"/>
+  <rect x="348" y="357" width="104" height="193" fill="#141414"/>
+  <path d="M354 364h92v186h-92z" fill="#e5e5df"/>
+  <circle cx="430" cy="458" r="6" fill="#e91b2d"/>
+  <path d="M0 596h800M0 674h800" stroke="#383838" stroke-width="4"/>
+  <path d="M50 800 278 596h82L178 800M620 800 440 596h82l230 204" fill="#292929"/>
+  <rect x="82" y="581" width="636" height="16" fill="#e91b2d"/>
+  <circle cx="110" cy="104" r="7" fill="#e91b2d"/>
+  <circle cx="690" cy="104" r="7" fill="#e91b2d"/>
+</svg>

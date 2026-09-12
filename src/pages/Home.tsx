@@ -1,0 +1,12 @@
+import { Footer } from '../components/layout/Footer'
+import { Header } from '../components/layout/Header'
+import { WhatsAppButton } from '../components/layout/WhatsAppButton'
+import { Avaliacoes } from '../components/sections/Avaliacoes'
+import { ComoFunciona } from '../components/sections/ComoFunciona'
+import { CTAFinal } from '../components/sections/CTAFinal'
+import { Diferenciais } from '../components/sections/Diferenciais'
+import { Hero } from '../components/sections/Hero'
+import { OndeEstamos } from '../components/sections/OndeEstamos'
+import { Servicos } from '../components/sections/Servicos'
+import { ServicesMarquee } from '../components/sections/ServicesMarquee'
+export function Home() { return <><Header /><main><Hero /><ServicesMarquee /><Diferenciais /><ComoFunciona /><Servicos /><Avaliacoes /><OndeEstamos /><CTAFinal /></main><Footer /><WhatsAppButton /></> }

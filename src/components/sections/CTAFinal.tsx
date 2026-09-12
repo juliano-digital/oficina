@@ -1,0 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
+import { Button } from '../ui/Button'
+import { ContactForm } from './ContactForm'
+export function CTAFinal() { return <section id="orcamento" className="bg-signal px-5 py-20 lg:px-8"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_1fr] lg:items-center"><div><p className="mb-4 text-xs font-bold uppercase tracking-[.2em] text-black/60">Não espere piorar</p><h2 className="font-display text-5xl uppercase leading-[.9] text-white sm:text-7xl">Seu câmbio está pedindo atenção?</h2><p className="mt-6 max-w-md text-base leading-7 text-white/80">Conte o que está acontecendo. A primeira conversa é com um especialista.</p><Button href="https://wa.me/5511999991234" variant="outline" className="mt-8 border-white text-white hover:border-black hover:text-black">Falar pelo WhatsApp <ArrowUpRight size={16} /></Button></div><div className="bg-ink p-6 sm:p-8"><ContactForm /></div></div></section> }
