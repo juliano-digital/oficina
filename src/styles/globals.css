@@ -9,6 +9,7 @@ body { margin: 0; min-width: 320px; background: #0a0a0a; }
 * { box-sizing: border-box; }
 ::selection { background: #e11d2e; color: white; }
 .form-input { @apply mt-2 block w-full border border-line bg-white/[.04] px-4 py-3 text-sm font-normal normal-case tracking-normal text-white outline-none transition-colors placeholder:text-white/30 focus:border-signal focus:ring-1 focus:ring-signal; }
+.form-input option { @apply bg-neutral-900 text-white; }
 .field-error { @apply mt-1 block text-[11px] font-normal normal-case tracking-normal text-red-300; }
 .marquee-track { animation: marquee 18s linear infinite; will-change: transform; }
 .marquee-track:hover, .marquee-track:focus-visible { animation-play-state: paused; outline: none; }

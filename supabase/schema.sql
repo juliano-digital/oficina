@@ -2,12 +2,17 @@ create extension if not exists "uuid-ossp";
 
 create table if not exists contacts (
   id uuid primary key default uuid_generate_v4(),
-  nome text not null,
-  telefone text not null,
-  mensagem text not null,
-  carro_modelo text not null,
+  nome text not null check (char_length(trim(nome)) >= 2),
+  telefone text not null check (char_length(trim(telefone)) >= 10),
+  mensagem text not null check (char_length(trim(mensagem)) >= 10),
+  carro_modelo text not null check (char_length(trim(carro_modelo)) >= 2),
+  marca text,
+  ano integer,
   criado_em timestamptz not null default now()
 );
+
+alter table contacts add column if not exists marca text;
+alter table contacts add column if not exists ano integer;
 
 create table if not exists reviews (
   id uuid primary key default uuid_generate_v4(),
@@ -31,6 +36,7 @@ alter table reviews enable row level security;
 alter table services enable row level security;
 
 create policy "public can create contacts" on contacts for insert with check (true);
+create policy "authenticated can read contacts" on contacts for select to authenticated using (true);
 create policy "public can read approved reviews" on reviews for select using (aprovado = true);
 create policy "public can read services" on services for select using (true);
 

@@ -6,7 +6,8 @@ import type { ContactFormData } from '../types/contact'
 export const contactSchema = z.object({
   nome: z.string().min(2, 'Informe seu nome.'),
   telefone: z.string().min(10, 'Informe um telefone válido.'),
-  carro_modelo: z.string().min(2, 'Informe o carro e o ano.'),
+  marca: z.string().min(2, 'Selecione a marca do carro.'),
+  ano: z.string().regex(/^(19|20)\d{2}$/, 'Selecione o ano do carro.'),
   mensagem: z.string().min(10, 'Conte brevemente o que está acontecendo.'),
 })
 
